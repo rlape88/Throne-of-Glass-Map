@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sartaq</title>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            background: #8B4513;
+            /* Saddle Brown for Sartaq, representing his connection to the earth and strength */
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #222;
+        }
+
+        img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 5px;
+            margin-left: 20px;
+            float: right;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: #8B4513;
+            /* Matching background color */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background: #7A3B10;
+            /* Darker shade for hover effect */
+        }
+
+        .spoiler {
+            display: none;
+            /* Hidden by default */
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .spoiler-button {
+            background-color: #d3d3d3;
+            /* Light Gray */
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .spoiler-button:hover {
+            background-color: #b0b0b0;
+            /* Darker Gray on hover */
+        }
+    </style>
+
+    <script>
+        function toggleSpoiler() {
+            var spoiler = document.getElementById("statusSpoiler");
+            if (spoiler.style.display === "none") {
+                spoiler.style.display = "block";
+            } else {
+                spoiler.style.display = "none";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Sartaq</h1>
+    </header>
+    <div class="container">
+        <section>
+            <h2>Image</h2>
+            <img src="Images/Sartaq_Photo.jpg" alt="Sartaq">
+            <p>Sartaq is the Prince of Antica and heir to the khagan's throne, known for his bravery and leadership...
+            </p>
+        </section>
+        <section>
+            <h2>Physical Description</h2>
+            <p>Sartaq has black hair, dark eyes, and a strong build. His skin is sun-kissed from his time in the sky...
+            </p>
+        </section>
+        <section>
+            <h2>Personality Traits</h2>
+            <p>He is honorable, courageous, and deeply loyal to his people, often prioritizing their safety above all...
+            </p>
+        </section>
+        <section>
+            <h2>Magical Abilities</h2>
+            <p>While Sartaq does not possess magic, he is an expert ruk rider, showcasing his skill and bravery in
+                battle...</p>
+        </section>
+        <section>
+            <h2>Connections</h2>
+            <p>Sartaq has a close relationship with Nesryn Faliq and is dedicated to uniting his people against
+                threats...</p>
+        </section>
+        <section>
+            <h2>Spoiler Alert</h2>
+            <button class="spoiler-button" onclick="toggleSpoiler()">Living/Dead</button>
+            <div id="statusSpoiler" class="spoiler">
+                <p>Sartaq is alive.</p>
+            </div>
+        </section>
+        <a href="Erilea.html">Back to Erilea</a>
+    </div>
+</body>
+
+</html>

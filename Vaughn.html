@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaughn</title>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            background: #2F4F4F;
+            /* Dark Slate Gray for Vaughn, representing his mysterious and strong nature */
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #222;
+        }
+
+        img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 5px;
+            margin-left: 20px;
+            float: right;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: #2F4F4F;
+            /* Matching background color */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background: #1C3F3F;
+            /* Darker shade for hover effect */
+        }
+
+        .spoiler {
+            display: none;
+            /* Hidden by default */
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .spoiler-button {
+            background-color: #d3d3d3;
+            /* Light Gray */
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .spoiler-button:hover {
+            background-color: #b0b0b0;
+            /* Darker Gray on hover */
+        }
+    </style>
+
+    <script>
+        function toggleSpoiler() {
+            var spoiler = document.getElementById("statusSpoiler");
+            if (spoiler.style.display === "none") {
+                spoiler.style.display = "block";
+            } else {
+                spoiler.style.display = "none";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Vaughn</h1>
+    </header>
+    <div class="container">
+        <section>
+            <h2>Image</h2>
+            <img src="Images/Vaughn_Photo.jpg" alt="Vaughn">
+            <p>Vaughn is a Fae warrior and a member of Maeve's cadre, known for his loyalty and strength...</p>
+        </section>
+        <section>
+            <h2>Physical Description</h2>
+            <p>Vaughn has dark hair and dark eyes, with a strong build that reflects his avian form as an osprey...</p>
+        </section>
+        <section>
+            <h2>Personality Traits</h2>
+            <p>He is mysterious, fiercely loyal, and often acts with a sense of duty towards his comrades...</p>
+        </section>
+        <section>
+            <h2>Magical Abilities</h2>
+            <p>Vaughn possesses the ability to transform into a massive osprey, showcasing his connection to the
+                skies...</p>
+        </section>
+        <section>
+            <h2>Connections</h2>
+            <p>He is closely tied to the cadre and has a complex relationship with Maeve, having taken a blood oath to
+                her...</p>
+        </section>
+        <section>
+            <h2>Spoiler Alert</h2>
+            <button class="spoiler-button" onclick="toggleSpoiler()">Living/Dead</button>
+            <div id="statusSpoiler" class="spoiler">
+                <p>Vaughn's current status is unknown.</p>
+            </div>
+        </section>
+        <a href="Erilea.html">Back to Erilea</a>
+    </div>
+</body>
+
+</html>

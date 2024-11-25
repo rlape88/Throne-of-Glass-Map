@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aelin Ashryver Whitethorn Galathynius</title>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            background: #005B5C;
+            /* Deep Emerald Green for Aelin */
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #222;
+        }
+
+        img {
+            width: 100%;
+            /* Full width of the container */
+            max-width: 300px;
+            /* Maximum width */
+            height: auto;
+            /* Maintain aspect ratio */
+            border-radius: 5px;
+            margin-left: 20px;
+            float: right;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: #005B5C;
+            /* Matching background color */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background: #003D3E;
+            /* Darker shade for hover effect */
+        }
+
+        .spoiler {
+            display: none;
+            /* Hidden by default */
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .spoiler-button {
+            background-color: #d3d3d3; /* Light Gray */
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .spoiler-button:hover {
+            background-color: #b0b0b0; /* Darker Gray on hover */
+        }
+    </style>
+
+    <script>
+        function toggleSpoiler() {
+            var spoiler = document.getElementById("statusSpoiler");
+            if (spoiler.style.display === "none") {
+                spoiler.style.display = "block";
+            } else {
+                spoiler.style.display = "none";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Aelin Ashryver Whitethorn Galathynius</h1>
+    </header>
+    <div class="container">
+        <section>
+            <h2>Image</h2>
+            <img src="Images/Aelin_Photo.jpg" alt="Aelin">
+            <p>Aelin is described as a fierce and powerful queen...</p>
+        </section>
+        <section>
+            <h2>Physical Description</h2>
+            <p>Aelin has striking features, including golden hair and bright green eyes...</p>
+        </section>
+        <section>
+            <h2>Personality Traits</h2>
+            <p>Aelin's personality includes bravery, cunning, and a fierce loyalty to her friends...</p>
+        </section>
+        <section>
+            <h2>Magical Abilities</h2>
+            <p>Aelin Ashryver Whitethorn Galathynius possesses a remarkable array of magical 
+                abilities that make her one of the most powerful character.</p>
+        </section>
+        <section>
+            <h2>Connections</h2>
+            <p>Aelin is connected to several key characters, including Rowan, Dorian, and Chaol...</p>
+        </section>
+        <section>
+            <h2>Spoiler Alert</h2>
+            <button class="spoiler-button" onclick="toggleSpoiler()">Living/Dead</button>
+            <div id="statusSpoiler" class="spoiler">
+                <p>Aelin is still living.</p>
+            </div>
+        </section>
+        <a href="Erilea.html">Back to Erilea</a>
+    </div>
+</body>
+
+</html>

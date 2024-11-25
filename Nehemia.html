@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nehemia Ytger</title>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            background: #FFD700;
+            /* Gold for Nehemia, symbolizing her royal status and warmth */
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #222;
+        }
+
+        img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 5px;
+            margin-left: 20px;
+            float: right;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: #FFD700;
+            /* Matching background color */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background: #FFC300;
+            /* Darker shade for hover effect */
+        }
+
+        .spoiler {
+            display: none;
+            /* Hidden by default */
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .spoiler-button {
+            background-color: #d3d3d3;
+            /* Light Gray */
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .spoiler-button:hover {
+            background-color: #b0b0b0;
+            /* Darker Gray on hover */
+        }
+    </style>
+
+    <script>
+        function toggleSpoiler() {
+            var spoiler = document.getElementById("statusSpoiler");
+            if (spoiler.style.display === "none") {
+                spoiler.style.display = "block";
+            } else {
+                spoiler.style.display = "none";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Nehemia Ytger</h1>
+    </header>
+    <div class="container">
+        <section>
+            <h2>Image</h2>
+            <img src="Images/Nehemia_Photo.jpg" alt="Nehemia">
+            <p>Nehemia Ytger is the Princess of Eyllwe, known for her beauty, intelligence, and fierce loyalty to her
+                people...</p>
+        </section>
+        <section>
+            <h2>Physical Description</h2>
+            <p>Nehemia has long black hair, brown eyes, and creamy brown skin. She often wears elegant clothing adorned
+                with golden accessories...</p>
+        </section>
+        <section>
+            <h2>Personality Traits</h2>
+            <p>She is wise, bold, and deeply committed to her country, often acting with cunning and bravery to protect
+                her people...</p>
+        </section>
+        <section>
+            <h2>Magical Abilities</h2>
+            <p>Nehemia is skilled in Wyrdmarks, using her knowledge to aid her friends and fight against oppression...
+            </p>
+        </section>
+        <section>
+            <h2>Connections</h2>
+            <p>She shares a close friendship with Aelin Galathynius and plays a crucial role in the rebel movement
+                against the King...</p>
+        </section>
+        <section>
+            <h2>Spoiler Alert</h2>
+            <button class="spoiler-button" onclick="toggleSpoiler()">Living/Dead</button>
+            <div id="statusSpoiler" class="spoiler">
+                <p>Nehemia is deceased.</p>
+            </div>
+        </section>
+        <a href="Erilea.html">Back to Erilea</a>
+    </div>
+</body>
+
+</html>
