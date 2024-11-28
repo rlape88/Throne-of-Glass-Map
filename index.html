@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        // Initialize the map
+        var map = L.map('map').setView([0, 100], 1); // Adjust the view as needed
+
+        // Define the image bounds
+        var imageUrl = 'Images/Erilea.jpg'; // Replace with your image URL
+        var imageBounds = [[-280, -180], [180, 380]]; // Adjust bounds to fit your image
+
+        // Add the image overlay
+        L.imageOverlay(imageUrl, imageBounds).addTo(map);
+
+        var customIcon = L.icon({
+            iconUrl: 'resize image project.png', // Replace with your image path
+            iconSize: [50, 50], // Size of the icon
+            iconAnchor: [1, 30], // Point of the icon which will correspond to marker's location
+            popupAnchor: [5, -30] // Point from which the popup should open relative to the iconAnchor
+        });
+
+        //TERRASEN CREW
+
+        //Aelin Marker
+        var marker = L.marker([78, 256]).addTo(map)
+            .bindPopup('<a href="Aelin.html" target="_blank">Aelin Galathynius</a>')
+            .openPopup();
+
+        //Aedion Ashryver
+        var marker = L.marker([12, 310]).addTo(map)
+            .bindPopup('<a href="Aedion.html" target="_blank">Aedion Ashryver</a>')
+            .openPopup();
+        
+        //Elide Lochan
+        var marker = L.marker([66, 232]).addTo(map)
+            .bindPopup('<a href="Elide.html" target="_blank">Elide Lochan</a>')
+            .openPopup();
+        
+        //CADRE
+
+        //Rowan Marker
+        var marker = L.marker([14, 320]).addTo(map)
+            .bindPopup('<a href="Rowan.html" target="_blank">Rowan Whitethorn</a>')
+            .openPopup();
+
+        //Gavriel (LAST NAME)
+        var marker = L.marker([14, 360]).addTo(map)
+            .bindPopup('<a href="Gavriel.html" target="_blank">Gavriel</a>')
+            .openPopup();
+
+        //Lorcan Salvaterre (Lochan)
+        var marker = L.marker([12, 330]).addTo(map)
+            .bindPopup('<a href="Lorcan.html" target="_blank">Lorcan Salvaterre (Lochan)</a>')
+            .openPopup();
+
+        //Fenrys Moonbeam
+        var marker = L.marker([12, 350]).addTo(map)
+            .bindPopup('<a href="Fenrys.html" target="_blank">Fenrys Moonbeam</a>')
+            .openPopup();
+
+        //Vaughn
+        var marker = L.marker([14, 340]).addTo(map)
+            .bindPopup('<a href="Vaughn.html" target="_blank">Vaughn</a>')
+            .openPopup(); 
+
+        //Cairn
+        var marker = L.marker([12, 370]).addTo(map)
+            .bindPopup('<a href="Cairn.html" target="_blank">Cairn</a>')
+            .openPopup();
+        
+        //ADARLAN CREW
+
+        //Dorian Marker
+        var marker = L.marker([12, 260]).addTo(map)
+            .bindPopup('<a href="Dorian.html" target="_blank">Dorian Havilliard</a>')
+            .openPopup();
+        
+        //Lysandra Ennar (Ashryver)
+        var marker = L.marker([17, 250]).addTo(map)
+            .bindPopup('<a href="Lysandra.html" target="_blank">Lysandra Ennar (Ashryver)</a>')
+            .openPopup();
+        
+        //Chaol Westfall
+        var marker = L.marker([7, 200]).addTo(map)
+            .bindPopup('<a href="Chaol.html" target="_blank">Chaol Westfall</a>')
+            .openPopup();
+        
+        //Kaltain Rompier
+        var marker = L.marker([12, 280]).addTo(map)
+            .bindPopup('<a href="Kaltain.html" target="_blank">Kaltain Rompier</a>')
+            .openPopup();
+        
+        //Evangeline
+        var marker = L.marker([17, 270]).addTo(map)
+            .bindPopup('<a href="Evangeline.html" target="_blank">Evangeline</a>')
+            .openPopup();
+
+        //SOUTHERN CREW
+
+        //Nesryn Faliq
+        var marker = L.marker([-90, 95]).addTo(map)
+            .bindPopup('<a href="Nesryn.html" target="_blank">Nesryn Faliq</a>')
+            .openPopup();
+        
+        //Sartaq (LAST NAME)
+        var marker = L.marker([-90, 110]).addTo(map)
+            .bindPopup('<a href="Sartaq.html" target="_blank">Sartaq</a>')
+            .openPopup();
+
+        //Nehemia Ytger
+        var marker = L.marker([-78, 290]).addTo(map)
+            .bindPopup('<a href="Nehemia.html" target="_blank">Nehemia Ytger</a>')
+            .openPopup();
+        
+        //Yrene Towers (Westfall)
+        var marker = L.marker([-50, 300]).addTo(map)
+            .bindPopup('<a href="Yrene.html" target="_blank">Yrene Towers (Westfall)</a>')
+            .openPopup();
+    
+        //WITCHES
+
+        //Manon Blackbeak
+        var marker = L.marker([55, 30]).addTo(map)
+            .bindPopup('<a href="Manon.html" target="_blank">Manon Blackbeak</a>')
+            .openPopup();
+
+        //Asterin (LOCATION)
+        var marker = L.marker([50, 20]).addTo(map)
+            .bindPopup('<a href="Asterin.html" target="_blank">Asterin Blackbeak</a>')
+            .openPopup();
+
+        //Sorrel (LOCATION)
+        var marker = L.marker([50, 40]).addTo(map)
+            .bindPopup('<a href="Sorrel.html" target="_blank">Sorrel Blackbeak</a>')
+            .openPopup();
+
+        //Vesta (LOCATION)
+        var marker = L.marker([55, 10]).addTo(map)
+            .bindPopup('<a href="Vesta.html" target="_blank">Vesta Blackbeak</a>')
+            .openPopup();
+
+    </script>
+</body>
+
+</html>
