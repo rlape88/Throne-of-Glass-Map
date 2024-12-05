@@ -35,6 +35,16 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .section {
+            flex: 1;
+            margin: 0 10px;
+        }
+
         section {
             margin-bottom: 20px;
         }
@@ -118,13 +128,10 @@
         </section>
         <section>
             <h2>Physical Description</h2>
-            <p>Fenrys has golden brown skin, onyx eyes, and distinctive twin scars on his face, embodying the strength
-                of his heritage...</p>
-        </section>
-        <section>
-            <h2>Personality Traits</h2>
-            <p>Fenrys is characterized by his bravery, deep sense of loyalty, and a strong desire for freedom from the
-                blood oath he despises...</p>
+            <p>Fenrys is a 137 year old male fae. His second form is a white wolf. He has golden hair
+                with onyx eyes and golden brown skin. He also has distinct twin scars on his face. His
+                height is 6'3" and he appears as if he is 25 years old.
+            </p>
         </section>
         <section>
             <h2>Magical Abilities</h2>
@@ -133,9 +140,23 @@
         </section>
         <section>
             <h2>Connections</h2>
-            <p>Fenrys has strong ties to his twin brother Connall and plays a crucial role in Aelin's court, often
-                acting as a protector...</p>
+            <p>Fenrys is now blood-sworn to Aelin Ashryver Whitethorn Galathynius. He used to be apart of Maeve's Cadre and
+                blood-sworn to Maeve. He had a twin brother, Connall, who was murdered by Maeve while Fenrys and Aelin were
+                captured.
+            </p>
         </section>
+        <div class="flex-container">
+            <div class="section">
+                <h2>Titles</h2>
+                <p>The White Wolf of Doranelle</p>
+                <p>Ambassador of Terrasen</p>
+            </div>
+            <div class="section">
+                <h2>Aliases</h2>
+                <p>Boyo</p>
+                <p>Pup</p>
+            </div>
+        </div>
         <section>
             <h2>Spoiler Alert</h2>
             <button class="spoiler-button" onclick="toggleSpoiler()">Living/Dead</button>
