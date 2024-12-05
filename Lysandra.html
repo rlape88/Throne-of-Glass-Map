@@ -35,6 +35,16 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .section {
+            flex: 1;
+            margin: 0 10px;
+        }
+
         section {
             margin-bottom: 20px;
         }
@@ -111,20 +121,13 @@
     </header>
     <div class="container">
         <section>
-            <h2>Image</h2>
             <img src="Images/Lysandra_Photo.jpg" alt="Lysandra">
-            <p>Lysandra Ennar is the Lady of Caraverre, a former courtesan and a powerful shapeshifter known for her
-                loyalty and courage...</p>
         </section>
         <section>
             <h2>Physical Description</h2>
-            <p>Lysandra has dark brown hair, striking emerald green eyes, and a pale complexion. As a shapeshifter, her
-                appearance can vary...</p>
-        </section>
-        <section>
-            <h2>Personality Traits</h2>
-            <p>She is intelligent, resourceful, and fiercely loyal, often using her skills to protect those she cares
-                about, especially Evangeline...</p>
+            <p>Lysandra is a 20 year old female human. She has dark brown hair with emerald green eyes. 
+                Her skin is sun-kissed. She stands at 5'4".
+            </p>
         </section>
         <section>
             <h2>Magical Abilities</h2>
@@ -133,9 +136,22 @@
         </section>
         <section>
             <h2>Connections</h2>
-            <p>She has strong ties to Aelin Galathynius and Aedion Ashryver, playing a crucial role in their fight
-                against their enemies...</p>
+            <p>Lysandra is mated and married to Aedion Ashryver. She has an adopted daughter, Evangeline. She used
+                to be owned by Arobynn Hammel and worked for Clarisse DuVency. The house she is apart of is 
+                House Caraverre. Her uncle is Falkan Ennar.
+            </p>
+            <p>Her cousin-in-laws are Aelin Galathynius and Rowan Whitethorn</p>
         </section>
+        <div class="flex-container">
+            <div class="section">
+                <h2>Titles</h2>
+                <p>Lady of Caraverre</p>
+            </div>
+            <div class="section">
+                <h2>Aliases</h2>
+                <p>Shifter</p>
+            </div>
+        </div>
         <section>
             <h2>Spoiler Alert</h2>
             <button class="spoiler-button" onclick="toggleSpoiler()">Living/Dead</button>
