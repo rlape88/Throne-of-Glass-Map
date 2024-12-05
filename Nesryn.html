@@ -34,6 +34,16 @@
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
+        
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .section {
+            flex: 1;
+            margin: 0 10px;
+        }
 
         section {
             margin-bottom: 20px;
@@ -111,20 +121,12 @@
     </header>
     <div class="container">
         <section>
-            <h2>Image</h2>
             <img src="Images/Nesryn_Photo.jpg" alt="Nesryn">
-            <p>Nesryn Faliq is a skilled archer and former city guard of Rifthold, known for her bravery and loyalty...
-            </p>
         </section>
         <section>
             <h2>Physical Description</h2>
             <p>Nesryn has black hair, midnight eyes, and an olive complexion. She often wears practical clothing suited
                 for combat...</p>
-        </section>
-        <section>
-            <h2>Personality Traits</h2>
-            <p>She is determined, resourceful, and fiercely protective of her friends, often taking charge in difficult
-                situations...</p>
         </section>
         <section>
             <h2>Magical Abilities</h2>
@@ -136,6 +138,22 @@
             <p>Nesryn has strong ties to Chaol Westfall and Sartaq, and she plays a crucial role in the fight against
                 tyranny...</p>
         </section>
+        <div class="flex-container">
+            <div class="section">
+                <h2>Titles</h2>
+                <p>Wing Leader (formerly)</p>
+                <p>Blackbeak Heir (formerly)</p>
+                <p>The Last Crochan Queen</p>
+                <p>Queen of Witches</p>
+            </div>
+            <div class="section">
+                <h2>Aliases</h2>
+                <p>White Demon</p>
+                <p>Manon Witch Killer</p>
+                <p>Manon Kin Slayer</p>
+                <p>Witchling</p>
+            </div>
+        </div>
         <section>
             <h2>Spoiler Alert</h2>
             <button class="spoiler-button" onclick="toggleSpoiler()">Living/Dead</button>
