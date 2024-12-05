@@ -35,6 +35,16 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .section {
+            flex: 1;
+            margin: 0 10px;
+        }
+
         section {
             margin-bottom: 20px;
         }
@@ -114,17 +124,13 @@
     </header>
     <div class="container">
         <section>
-            <h2>Image</h2>
             <img src="Images/Dorian_Photo.jpg" alt="Dorian">
-            <p>Dorian is described as a charming and charismatic prince...</p>
         </section>
         <section>
             <h2>Physical Description</h2>
-            <p>Dorian has striking features, including dark hair and blue eyes...</p>
-        </section>
-        <section>
-            <h2>Personality Traits</h2>
-            <p>Dorian's personality includes kindness, bravery, and a strong sense of justice...</p>
+            <p>Dorian is a 20 year old human male. He has black hair with sapphire eyes.
+                His height is 6'0". He has a white band-like scar that goes around his throat.
+            </p>
         </section>
         <section>
             <h2>Magical Abilities</h2>
@@ -132,8 +138,29 @@
         </section>
         <section>
             <h2>Connections</h2>
-            <p>Dorian is closely connected to Aelin, Chaol, and other key characters...</p>
+            <p>Dorian is in a relationship with Manon Blackbeak. He had a former lover, Sorscha, who was
+                beheaded by his father, The King (while possessed by Erawan). 
+            <p>His deceased father is Dorian Havilliard I. His mother is Georgiana Havilliard. 
+                His younger brother is Hollin Havilliard.
+            </p>
+            </p>
+            <p>His cousins and distant relatives are Roland Havilliard, Aelin Galathynius, Lidia Cervos,
+                Brann, and Actaeon.
+            </p>
+            <p>Some of his notable ancestors are Gavin Havilliard, Elena Galathynius, and Brannon Galathynius.</p>
         </section>
+        <div class="flex-container">
+            <div class="section">
+            <h2>Titles</h2>
+                <p>King of Adarlan</p>
+                <p>Prince (formerly)</p>
+            </div>
+            <div class="section">
+            <h2>Aliases</h2>
+                <p>Magnanimous Holiness</p>
+                <p>Princeling</p>
+            </div>
+        </div>
         <section>
             <h2>Spoiler Alert</h2>
             <button class="spoiler-button" onclick="toggleSpoiler()">Living/Dead</button>
