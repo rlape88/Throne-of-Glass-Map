@@ -35,6 +35,16 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .section {
+            flex: 1;
+            margin: 0 10px;
+        }
+
         section {
             margin-bottom: 20px;
         }
@@ -119,16 +129,6 @@
                 and a deep tan, standing tall at 6'3". He is 25 years old and is a demi-fae</p>
         </section>
         <section>
-            <h2>Titles</h2>
-            <p>General of the Bane, General of Adarlan (formerly), Prince of Terrasen,
-                Prince of Wendlyn, & Lord of Caraverre
-            </p>
-        </section>
-        <section>
-            <h2>Aliases</h2>
-            <p>Worm, Wolf of the North, Brother, Boyo, Adarlan's Whore, & Gavriel's Pride</p>
-        </section>
-        <section>
             <h2>Magical Abilities</h2>
             <p>Aedion is a demi-fae with exceptional combat skills, wielding the Sword of Orynth with great prowess...
             </p>
@@ -141,6 +141,26 @@
                 distant aunt.
             </p>
         </section>
+        <div class="flex-container">
+            <div class="section">
+            <h2>Titles</h2>
+            <p>General of the Bane
+            <p>General of Adarlan (formerly)
+            <p>Prince of Terrasen
+            <p>Prince of Wendlyn
+            <p>Lord of Caraverre
+            </p>
+            </div>
+            <div class="section">
+            <h2>Aliases</h2>
+            <p>Worm
+            <p>Wolf of the North
+            <p>Brother
+            <p>Boyo
+            <p>Adarlan's Whore
+            <p>Gavriel's Pride</p>
+            </div>
+        </div>
         <section>
             <h2>Spoiler Alert</h2>
             <button class="spoiler-button" onclick="toggleSpoiler()">Alive/Dead</button>

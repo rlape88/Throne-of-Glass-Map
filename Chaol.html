@@ -35,6 +35,16 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .section {
+            flex: 1;
+            margin: 0 10px;
+        }
+
         section {
             margin-bottom: 20px;
         }
@@ -114,31 +124,37 @@
     </header>
     <div class="container">
         <section>
-            <h2>Image</h2>
             <img src="Images/Chaol_Photo.jpg" alt="Chaol">
-            <p>Chaol is known for his strong sense of duty and loyalty...</p>
         </section>
         <section>
             <h2>Physical Description</h2>
-            <p>Chaol has dark hair and a strong build, often described as imposing...</p>
-        </section>
-        <section>
-            <h2>Personality Traits</h2>
-            <p>Chaol's personality includes honor, determination, and a protective nature...</p>
-        </section>
-        <section>
-            <h2>Magical Abilities</h2>
-            <p>While not a magic user himself, Chaol has a deep understanding of strategy and combat...</p>
+            <p>Chaol is a 24 year old human male. He has chestnut hair with bronze colored eyes.
+                He stands at 6'1" and has a distinct scar on his face.
+            </p>
         </section>
         <section>
             <h2>Connections</h2>
-            <p>Chaol is closely connected to Aelin, Dorian, and his role as Captain of the Guard...</p>
+            <p>Chaol is married to Yrene, and they are expecting a child. His father is Lord Westfall.
+                His mother is Lady Westfall. His brother is Terrin Westfall.
+            </p>
         </section>
+        <div class="flex-container">
+            <div class="section">
+            <h2>Titles</h2>
+            <p>Lord of Anielle
+            <p>Captain of the Royal Guard (formerly)
+            <p>Hand of the King</p>
+            </div>
+            <div class="section">
+            <h2>Alias</h2>
+            <p>Lord Westfall</p>
+            </div>
+        </div>
         <section>
             <h2>Spoiler Alert</h2>
             <button class="spoiler-button" onclick="toggleSpoiler()">Living/Dead</button>
             <div id="statusSpoiler" class="spoiler">
-                <p>Chaol is alive.</p>
+                <p>Chaol is alive. His life is bound to Yrene's life.</p>
             </div>
         </section>
         <a href="index.html">Back to Erilea</a>

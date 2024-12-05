@@ -35,6 +35,16 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .section {
+            flex: 1;
+            margin: 0 10px;
+        }
+
         section {
             margin-bottom: 20px;
         }
@@ -108,7 +118,7 @@
 
 <body>
     <header>
-        <h1>Aelin Ashryver Whitethorn Galathynius</h1>
+        <h1>Aelin Ashryver Galathynius</h1>
     </header>
     <div class="container">
         <section>
@@ -120,30 +130,50 @@
                 turquoise eyes ringed with gold. Those eyes are also known as 'Ashryver eyes'.</p>
         </section>
         <section>
-            <h2>Titles</h2>
-            <p>Queen of Terrasen, Adarlan's Assassin, The King's Champion, Witch Slayer, Heir of Fire,
-                Heir of Ash and Fire, Heir of Terrasen, Heir of Brannon, Heir of Mala Fire-Bringer,
-                Fireheart, Fire-breathing bitch-queen, Aelin of the Wildfire, Aelin Fire-Bringer,
-                Aelin Light-Bringer, The Queen of Flame and Shadow, The Queen Who Was Promised,
-                The Queen Who Walked Between Worlds, The Gods Killer, The Faerie Queen of the West,
-                & The Lost Princess
-            </p>
-        </section>
-        <section>
-            <h2>Alias</h2>
-            <p>Celaena Sardothien, Lillian Gordaina, Dianna Brackyn, Elentiya, Nameless, & Fireheart</p>
-        </section>
-        <section>
             <h2>Magical Abilities</h2>
-            <p>Aelin Ashryver Whitethorn Galathynius possesses a remarkable array of magical 
+            <p>Aelin Ashryver Whitethorn Galathynius possesses a remarkable array of magical
                 abilities that make her one of the most powerful character.</p>
         </section>
         <section>
             <h2>Connections</h2>
-            <p>Her parents are Rhoe Galathynius and Evalin Ashryver, who both died when she was 8. 
-                Aelin is married to Rowan Whitethorn who is also her mate who is also a distant relative to her. 
+            <p>Her parents are Rhoe Galathynius and Evalin Ashryver, who both died when she was 8.
+                Aelin is married to Rowan Whitethorn who is also her mate who is also a distant relative to her.
                 Aedion Ashryver is her cousin and his father, her uncle, is Gavriel</p>
         </section>
+        <div class="flex-container">
+            <div class="section">
+            <h2>Titles</h2>
+            <p>Queen of Terrasen</p>
+            <p>Adarlan's Assassin</p>
+            <p>The King's Champion</p>
+            <p>Witch Slayer</p>
+            <p>Heir of Fire</p>
+            <p>Heir of Ash and Fire</p>
+            <p>Heir of Terrasen</p>
+            <p>Heir of Brannon</p>
+            <p>Heir of Mala Fire-Bringer</p>
+            <p>Fireheart</p>
+            <p>Fire-breathing bitch-queen</p>
+            <p>Aelin of the Wildfire</p>
+            <p>Aelin Fire-Bringer</p>
+            <p>Aelin Light-Bringer</p>
+            <p>The Queen of Flame and Shadow</p>
+            <p>The Queen Who Was Promised</p>
+            <p>The Queen Who Walked Between Worlds</p>
+            <p>The Gods Killer</p>
+            <p>The Faerie Queen of the West</p>
+            <p>The Lost Princess</p>
+            </div>
+            <div class="section">
+            <h2>Alias</h2>
+            <p>Celaena Sardothien</p>
+            <p>Lillian Gordaina</p>
+            <p>Dianna Brackyn</p>
+            <p>Elentiya</p>
+            <p>Nameless</p>
+            <p>Fireheart</p>
+            </div>
+        </div>
         <section>
             <h2>Spoiler Alert</h2>
             <button class="spoiler-button" onclick="toggleSpoiler()">Alive/Dead</button>
