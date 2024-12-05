@@ -35,6 +35,16 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .section {
+            flex: 1;
+            margin: 0 10px;
+        }
+
         section {
             margin-bottom: 20px;
         }
@@ -111,31 +121,26 @@
     </header>
     <div class="container">
         <section>
-            <h2>Image</h2>
             <img src="Images/Sartaq_Photo.jpg" alt="Sartaq">
-            <p>Sartaq is the Prince of Antica and heir to the khagan's throne, known for his bravery and leadership...
-            </p>
         </section>
         <section>
             <h2>Physical Description</h2>
-            <p>Sartaq has black hair, dark eyes, and a strong build. His skin is sun-kissed from his time in the sky...
-            </p>
-        </section>
-        <section>
-            <h2>Personality Traits</h2>
-            <p>He is honorable, courageous, and deeply loyal to his people, often prioritizing their safety above all...
-            </p>
-        </section>
-        <section>
-            <h2>Magical Abilities</h2>
-            <p>While Sartaq does not possess magic, he is an expert ruk rider, showcasing his skill and bravery in
-                battle...</p>
+            <p>Sartaq is...</p>
         </section>
         <section>
             <h2>Connections</h2>
-            <p>Sartaq has a close relationship with Nesryn Faliq and is dedicated to uniting his people against
-                threats...</p>
+            <p>Sartaq is engaged to Nesryn Faliq. His parents are the...</p>
+            <p>He is apart of The Rhukin in the Southern Continent.</p>
         </section>
+        <div class="flex-container">
+            <div class="section">
+                <h2>Titles</h2>
+                <p>Future Emperer of the Southern Continent</p>
+            </div>
+            <div class="section">
+                <h2>Aliases</h2>
+            </div>
+        </div>
         <section>
             <h2>Spoiler Alert</h2>
             <button class="spoiler-button" onclick="toggleSpoiler()">Living/Dead</button>
