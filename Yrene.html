@@ -35,6 +35,16 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .section {
+            flex: 1;
+            margin: 0 10px;
+        }
+
         section {
             margin-bottom: 20px;
         }
@@ -111,36 +121,50 @@
     </header>
     <div class="container">
         <section>
-            <h2>Image</h2>
             <img src="Images/Yrene_Photo.jpg" alt="Yrene">
-            <p>Yrene Towers is a gifted healer from Fenharrow, known for her compassion and dedication to saving
-                lives...</p>
         </section>
         <section>
             <h2>Physical Description</h2>
-            <p>Yrene has rich brown hair with flashes of dark gold, golden-brown eyes, and a warm complexion that
-                reflects her nurturing spirit...</p>
+            <p>Yrene is a 22 year old female human. She has rich brown hair with flashes of dark gold. Her eyes are 
+                a golden-brown and so is her skin color. She is 5'4". 
+            </p>
         </section>
         <section>
-            <h2>Personality Traits</h2>
-            <p>She is kind, resilient, and deeply committed to her healing work, often putting others' needs before her
-                own...</p>
+            <h2>Origins</h2>
+            <p>Fenharrow & Eyllwe</p>
         </section>
         <section>
             <h2>Magical Abilities</h2>
             <p>Yrene possesses powerful healing magic, blessed by the goddess of healing, which she uses to help those
-                in need...</p>
+                in need. She helped heal Chaol's paralyzed legs so that he could walk again.</p>
         </section>
         <section>
             <h2>Connections</h2>
-            <p>She has strong ties to Chaol Westfall and the royal family of Terrasen, playing a crucial role in their
-                recovery and battles...</p>
+            <p>Yrene is married to Chaol Westfall and pregnant with their child. She is a healer of the Torre Cesme. She
+                is now connected to the House Westfall and is in the Towers Family.
+            </p>
+            <p>Her father is from Eyllwe and is unnamed. Her mother is Josefin Towers. Her distant relatives are Rosana,
+                Marte, Olgnia, and Yafa Towers. They were all healers who were also apart of the Torre Cesme.
+            </p>
+            <p>In the past, Aelin helped Yrene leave the tavern she was stuck working at so she could pursue her dream
+                of being a healer and helping others. Aelin, who was Celaena at the time, left her jewels to buy passage
+                on a ship and a note with "The world needs more healers" written on it.
+            </p>
         </section>
+        <div class="flex-container">
+            <div class="section">
+                <h2>Titles</h2>
+                <p>Healer</p>
+                <p>Heir Apparent of the Healer on High</p>
+                <p>Lady Westfall</p>
+                <p>Golden Lady</p>
+            </div>
+        </div>
         <section>
             <h2>Spoiler Alert</h2>
             <button class="spoiler-button" onclick="toggleSpoiler()">Living/Dead</button>
             <div id="statusSpoiler" class="spoiler">
-                <p>Yrene is alive.</p>
+                <p>Yrene is alive. Her life is bound to Chaol Westfall</p>
             </div>
         </section>
         <a href="index.html">Back to Erilea</a>
